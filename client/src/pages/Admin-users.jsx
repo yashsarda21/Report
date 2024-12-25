@@ -10,7 +10,7 @@ export const AdminUsers = () => {
 
     const getAllUsersData = async() =>{
         try {
-            const response = await fetch("http://localhost:5001/api/admin/users" , {
+            const response = await fetch("https://reportapi.vercel.app/api/admin/users" , {
                 method: "GET",
                 headers:{
                     Authorization: AuthorizationToken,
@@ -25,7 +25,7 @@ export const AdminUsers = () => {
 
     const deleteUser = async (id) =>{
         try {
-            const response = await fetch(`http://localhost:5001/api/admin/users/delete/${id}` , {
+            const response = await fetch(`https://reportapi.vercel.app/api/admin/users/delete/${id}` , {
                 method: "DELETE",
                 headers:{
                     Authorization: AuthorizationToken,

@@ -9,7 +9,7 @@ export const AdminContacts = () => {
     
         const getAllContactsData = async() =>{
             try {
-                const response = await fetch("http://localhost:5001/api/admin/contacts" , {
+                const response = await fetch("https://reportapi.vercel.app/api/admin/contacts" , {
                     method: "GET",
                     headers:{
                         Authorization: AuthorizationToken,
