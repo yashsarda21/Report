@@ -1,13 +1,21 @@
 {
-        "version": 2,
-        "routes": [
-        {
-            "src": "/api/(.*)",
-            "headers": {
-            "Access-Control-Allow-Origin": "https://reportui.vercel.app",
-            "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
-            "Access-Control-Allow-Headers": "Content-Type, Authorization"
-            }
+    "version": 2,
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "headers": {
+          "Access-Control-Allow-Origin": "https://reportui.vercel.app",
+          "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+          "Access-Control-Allow-Headers": "Content-Type, Authorization",
+          "Access-Control-Allow-Credentials": "true"
         }
-        ]
-}
+      },
+      {
+        "src": "/api/(.*)",
+        "methods": ["OPTIONS"],
+        "dest": "/api/$1",
+        "status": 204
+      }
+    ]
+  }
+  
