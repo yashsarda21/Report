@@ -9,7 +9,7 @@ const accessToken = async (req,res) =>{
             body: new URLSearchParams({
                 grant_type: 'client_credentials',
                 client_id: '01a4c2e8-16c8-4d19-9352-36437622c6b5',
-                client_secret: 'nc_8Q~vyryytIAciqPxgvdqL4FFqLsbBAQIJxdmo',
+                client_secret: process.env.AZURE_API_KEY,
                 scope: 'https://analysis.windows.net/powerbi/api/.default',
             }),
         });
