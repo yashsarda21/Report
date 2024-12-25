@@ -7,7 +7,7 @@ const port = 5001;
 
 // Define CORS options
 const corsOptions = {
-    origin: ["https://reportui.vercel.app"], // Allowed origins
+    origin: ["*"], // Allowed origins
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"], // Explicitly list methods
     credentials: true, // Allow credentials (e.g., cookies, Authorization headers)
     allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
