@@ -3,10 +3,10 @@ const express = require("express");
 const app = express();
 const cors =require("cors");
 
-const port = 5001;
+const port = 5002;
 
 const corsOptions = {
-    origin: "https://reportui.vercel.app",
+    origin: "http://localhost:5175",
     methods: ["GET, POST, PUT, DELETE, PATCH, HEAD"],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'],
