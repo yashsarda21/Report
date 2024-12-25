@@ -9,7 +9,7 @@ const corsOptions = {
     origin: "https://reportui.vercel.app",
     methods: ["GET, POST, PUT, DELETE, PATCH, HEAD"],
     credentials: true,
-    allowedHeaders: ['Content-Type,Authorization'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
 }
 app.use(cors(corsOptions));
 
