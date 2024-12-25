@@ -6,7 +6,7 @@ const cors =require("cors");
 const port = 5001;
 
 const corsOptions = {
-    origin: "http://localhost:5175",
+    origin: "https://reportui.vercel.app",
     methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
     credentials: true,
 }
