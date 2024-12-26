@@ -6,7 +6,7 @@ const cors =require("cors");
 const PORT = process.env.PORT || 5002;
 
 const corsOptions = {
-    origin: "https://report-frontend.onrender.com",
+    origin: process.env.CLIENT_BASE_URL,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'],
