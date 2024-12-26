@@ -77,7 +77,7 @@ export const Contact = () => {
                 <form onSubmit={handleSubmit}>
                 <h1 className="main-heading">contact us</h1>
                 <div>
-                    <label htmlFor="username">username</label>
+                    <label className="contact-label" htmlFor="username">username</label>
                     <input
                         type="text"
                         name="username"

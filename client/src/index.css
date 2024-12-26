@@ -709,3 +709,9 @@ table tr, thead th{
     box-shadow: none;
   }
 }
+
+
+.contact-label{
+  background-color: #fff;
+  color: red;
+}
