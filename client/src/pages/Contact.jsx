@@ -38,7 +38,7 @@ export const Contact = () => {
     console.log(contact);
 
     try {
-        const response = await fetch("https://reportapi.vercel.app/api/form/contact", {
+        const response = await fetch(`${import.meta.env.VITE_APU_URL}api/form/contact`, {
             method: "POST",
             headers:{
                 "Content-Type" : "application/json",

@@ -31,7 +31,7 @@ export const Register = () => {
     e.preventDefault();
     console.log(user);
     try {
-      const response = await fetch("https://reportapi.vercel.app/api/auth/register", {
+      const response = await fetch(`${import.meta.env.VITE_APU_URL}/api/auth/register`, {
         method : "POST",
         headers: {
             "Content-Type" : "application/json",

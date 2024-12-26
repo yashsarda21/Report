@@ -26,7 +26,7 @@ export const AuthProvider = ({children}) =>{
     const userAuthentication = async() =>{
         try {
             setIsLoading(true);
-            const response = await fetch("https://reportapi.vercel.app/api/auth/user" ,{
+            const response = await fetch(`${import.meta.env.VITE_APU_URL}/api/auth/user` ,{
                 method: "GET",
                 headers :{
                     Authorization : AuthorizationToken,

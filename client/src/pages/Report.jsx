@@ -16,7 +16,7 @@ const Report = () => {
 
     const fetchAccessToken = async () => {
         try {
-            const response = await fetch('https://reportapi.vercel.app/api/powerbi/getAccessToken', {
+            const response = await fetch(`${import.meta.env.VITE_APU_URL}/api/powerbi/getAccessToken`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ const Report = () => {
 
     const fetchEmbedToken = async (token) => {
         try {
-            const response = await fetch('https://reportapi.vercel.app/api/powerbi/generateEmbedToken', {
+            const response = await fetch(`${import.meta.env.VITE_APU_URL}/api/powerbi/generateEmbedToken`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

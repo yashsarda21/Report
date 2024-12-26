@@ -3,10 +3,10 @@ const express = require("express");
 const app = express();
 const cors =require("cors");
 
-const port = 5002;
+const PORT = process.env.PORT || 5002;
 
 const corsOptions = {
-    origin: ["https://reportui.vercel.app"],
+    origin: process.env.CLIENT_BASE_URL,
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"],
     credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization'],
@@ -31,7 +31,7 @@ app.use("/api/powerbi" , powerBiRoute);
 app.use("/api/admin" , adminRoute);
 
 connectDB().then(() => { 
-    app.listen(port , () => {
-    console.log("server is running at 5001 port no");
+    app.listen(PORT , () => {
+    console.log("server is running at 5001 PORT no");
     });
 });
