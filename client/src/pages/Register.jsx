@@ -78,11 +78,11 @@ export const Register = () => {
               </div>
               {/* our main registration code  */}
               <div className="registration-form">
-                <h1 className="main-heading mb-3">registration form</h1>
+                <h1 className="main-heading mb-3">Registration Form</h1>
                 <br />
                 <form onSubmit={handleSubmit}>
                   <div>
-                    <label htmlFor="username">username</label>
+                    <label htmlFor="username">Username</label>
                     <input
                       type="text"
                       name="username"
@@ -92,7 +92,7 @@ export const Register = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email">email</label>
+                    <label htmlFor="email">Email</label>
                     <input
                       type="text"
                       name="email"
@@ -102,7 +102,7 @@ export const Register = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone">phone</label>
+                    <label htmlFor="phone">Phone</label>
                     <input
                       type="number"
                       name="phone"
@@ -112,7 +112,7 @@ export const Register = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="reportID">reportID</label>
+                    <label htmlFor="reportID">ReportID</label>
                     <input
                       type="text"
                       name="reportID"
@@ -122,7 +122,7 @@ export const Register = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="groupID">groupID</label>
+                    <label htmlFor="groupID">GroupID</label>
                     <input
                       type="text"
                       name="groupID"
@@ -132,7 +132,7 @@ export const Register = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="password">password</label>
+                    <label htmlFor="password">Password</label>
                     <input
                       type="password"
                       name="password"

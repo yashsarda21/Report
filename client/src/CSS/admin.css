@@ -1,0 +1,89 @@
+/* General styles for the admin users section */
+.admin-users-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.admin-users-section h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.admin-users {
+    overflow-x: auto; /* Enable horizontal scrolling for smaller screens */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #4caf50;
+    color: white;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    font-size: 2rem;
+}
+
+td {
+    font-size: 1.8rem;
+}
+
+/* Styles for buttons and links */
+admin-button {
+    padding: 5px 10px;
+    color: white;
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+admin-button:hover {
+    background-color: #d32f2f;
+}
+
+
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+    table {
+        display: block; /* Allow table to scroll horizontally */
+        overflow-x: auto;
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.85rem;
+    }
+
+    th {
+        text-align: center; /* Center align headers for smaller screens */
+    }
+
+    td {
+        text-align: center; /* Center align data for smaller screens */
+    }
+
+    .admin-users-section h1 {
+        font-size: 1.5rem; /* Slightly reduce header size */
+    }
+}

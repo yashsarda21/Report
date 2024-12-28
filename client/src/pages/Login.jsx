@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
-import "./login.css";
+import "../CSS/login.css";
 // import { toast } from 'react-toastify';
 // import {}
 
@@ -72,11 +72,11 @@ const Login = () => {
                             <br />
                             <form onSubmit={handleSubmit}>
                                 <div>
-                                    <label htmlFor="email">email</label>
+                                    <label htmlFor="email">Email</label>
                                     <input type="email" name="email" value = {user.email} onChange={handleInput} placeholder="email" id="email" required autoComplete="off"/>
                                 </div>                        
                                 <div>
-                                    <label htmlFor="password">password</label>
+                                    <label htmlFor="password">Password</label>
                                     <input type="password" name="password" value = {user.password} onChange={handleInput} placeholder="password" id="password" required autoComplete="off"/>
                                 </div>
                                 <br />

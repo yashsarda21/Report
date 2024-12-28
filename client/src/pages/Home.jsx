@@ -1,7 +1,7 @@
 // import { Analytics } from "../components/Analytics";
 
 // import { Footer } from "../components/Footer";
-import "./home.css"
+import "../CSS/home.css"
 
 export const Home = () => {
     return (
@@ -11,12 +11,9 @@ export const Home = () => {
             <div className="container grid grid-two-cols">
                 <div className="hero-content">
                     <p className="home-heading">We are the World Best IT Company</p>
-                    <h1>Welcome to Thapa Technical</h1>
+                    <h1>Welcome to Y&S and R&R</h1>
                     <p>
-                    Are you ready to take your business to the next level with
-                    cutting-edge IT solutions? Look no further! At Thapa Technical,
-                    we specialize in providing innovative IT services and solutions
-                    tailored to meet your unique needs.
+                    Are you ready to see your business like never before? Our platform delivers detailed reports and actionable insights that unlock your company's full potential. With in-depth analysis and tailored dashboards, we provide the clarity you need to make smarter, data-driven decisions.
                     </p>
                     <div className="btn btn-group">
                         <a href="/contact">
@@ -61,10 +58,7 @@ export const Home = () => {
             <p>We are here to help you</p>
             <h1>Get Started Today</h1>
             <p>
-                Ready to take the first step towards a more efficient and secure
-                IT infrastructure? Contact us today for a free consultation and
-                lets discuss how Thapa Technical can help your business thrive in
-                the digital age.
+            Take the leap into smarter business strategies! Our tools for performance benchmarking and trend forecasting ensure you stay ahead of the competition. Simplify complex data and turn it into valuable insights to elevate your decision-making and fuel your success.
             </p>
             <div className="btn btn-group ">
                 <a href="/contact">

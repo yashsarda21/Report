@@ -7,7 +7,8 @@ export const Contact = () => {
     email: "",
     message: "",
     }); 
-
+    
+    const {storeTokenInLocalStorage} = useAuth();
     const [userData, setUserData] = useState(true);
     const {user} = useAuth();
 
@@ -36,23 +37,22 @@ export const Contact = () => {
     const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(contact);
-
     try {
-        const response = await fetch(`${import.meta.env.VITE_APU_URL}api/form/contact`, {
+        const response = await fetch(`${import.meta.env.VITE_APU_URL}/api/form/contact`, {
             method: "POST",
             headers:{
                 "Content-Type" : "application/json",
             },
             body: JSON.stringify(contact),
         })
-
+        const res_data = await response.json();
         if(response.ok){
             setContact({
                 username: "",
                 email: "",
                 message: "",
             })
-
+            storeTokenInLocalStorage(res_data.token);
         }
     } catch (error) {
         console.log(error)
@@ -75,9 +75,9 @@ export const Contact = () => {
             {/* contact form content actual  */}
             <section className="section-form">
                 <form onSubmit={handleSubmit}>
-                <h1 className="contact-heading">contact us</h1>
+                <h1 className="contact-heading">Contact Us</h1>
                 <div>
-                    <label className="contact-label" htmlFor="username">username</label>
+                    <label className="contact-label" htmlFor="username">Username</label>
                     <input
                         type="text"
                         name="username"
@@ -90,7 +90,7 @@ export const Contact = () => {
                     </div>
 
                     <div>
-                    <label htmlFor="email">email</label>
+                    <label htmlFor="email">Email</label>
                     <input
                         type="email"
                         name="email"
@@ -103,7 +103,7 @@ export const Contact = () => {
                     </div>
 
                     <div>
-                    <label htmlFor="message">message</label>
+                    <label htmlFor="message">Message</label>
                     <textarea
                         name="message"
                         id="message"

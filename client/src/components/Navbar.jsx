@@ -73,7 +73,7 @@ const Navbar = () => {
             <div className="container">
                 <div className="logo">
                     <NavLink className="website-name" to="/" onClick={handleCloseNavbar}>
-                        MERN
+                        S&Y and R&R
                     </NavLink>
                 </div>
                 <div className="menu-icon" onClick={handleShowNavbar}>

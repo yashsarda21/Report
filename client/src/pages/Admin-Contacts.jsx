@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useAuth } from "../store/auth";
+import "../CSS/admin.css";
 
 export const AdminContacts = () => {
 
@@ -32,7 +33,7 @@ export const AdminContacts = () => {
                 <div className="container">
                     <h1>Admin Contacts Data</h1>
                 </div>
-                <div className="container admin-contacts">   
+                <div className="container admin-users">   
                     <table>
                         <thead>
                             <tr>

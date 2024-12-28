@@ -16,27 +16,24 @@ const About = () => {
                     <p>HI, {user ? user.username : "Welcome to our website" }</p>
                     <h1>Why Choose Us? </h1>
                     <p>
-                        Expertise: Our team consists of experienced IT professionals who
-                        are passionate about staying up-to-date with the latest industry
-                        trends.
+                    Comprehensive Business Reports
+                    Generate detailed, in-depth reports tailored to individual business needs, covering all essential metrics and performance indicators.
                     </p>
                     <p>
-                        Customization: We understand that every business is unique.
-                        Thats why we create solutions that are tailored to your specific
-                        needs and goals.
+                    Data-Driven Insights
+                    Provide actionable insights derived from data analysis to support strategic decision-making.
                     </p>
                     <p>
-                        Customer-Centric Approach: We prioritize your satisfaction and
-                        provide top-notch support to address your IT concerns.
+                    Trend Analysis
+                    Analyze historical data to identify trends and patterns that businesses can leverage for growth.
                     </p>
                     <p>
-                        Affordability: We offer competitive pricing without compromising
-                        on the quality of our services.
+                    Customized Analytics Dashboards
+                    Offer intuitive dashboards where businesses can visualize their data dynamically and interactively
                     </p>
                     <p>
-                        Reliability: Count on us to be there when you need us. We are
-                        committed to ensuring your IT environment is reliable and
-                        available 24/7.
+                    Performance Benchmarking
+                    Compare a businesses performance against industry standards and competitors to highlight areas of improvement.
                     </p>
                     <div className="btn btn-group">
                         <NavLink to="/contact">

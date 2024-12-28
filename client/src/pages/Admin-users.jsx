@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useAuth } from "../store/auth"
 import {Link} from "react-router-dom"
+import "../CSS/admin.css";
 
 export const AdminUsers = () => {
 
@@ -70,7 +71,7 @@ export const AdminUsers = () => {
                             <td >{curUser.email}</td>
                             <td >{curUser.phone}</td>
                             <td ><Link to={`admin/users/${curUser._id}/edit`}>Edit</Link></td>
-                            <td ><button onClick={() => deleteUser(curUser._id)}>Delete</button></td>
+                            <td ><button  className= "admin-button" onClick={() => deleteUser(curUser._id)}>Delete</button></td>
                             </tr>}
                         )}
                     </tbody>
