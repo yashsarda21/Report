@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../store/auth";
+import "./login.css";
 // import { toast } from 'react-toastify';
 // import {}
 
@@ -67,7 +68,7 @@ const Login = () => {
                         </div>
 
                         <div className="registration-form">
-                            <h1 className="main-heading mb-3">Login Form</h1>
+                            <h1 className="main-heading mb-3 login-heading">Login Form</h1>
                             <br />
                             <form onSubmit={handleSubmit}>
                                 <div>
@@ -79,7 +80,7 @@ const Login = () => {
                                     <input type="password" name="password" value = {user.password} onChange={handleInput} placeholder="password" id="password" required autoComplete="off"/>
                                 </div>
                                 <br />
-                                <button type="submit" className="btn btn-submit" >Login</button>
+                                <button type="submit" className="btn btn-submit login-btn" >Login</button>
                             </form>
                         </div>
                     </div>

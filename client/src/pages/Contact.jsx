@@ -75,7 +75,7 @@ export const Contact = () => {
             {/* contact form content actual  */}
             <section className="section-form">
                 <form onSubmit={handleSubmit}>
-                <h1 className="main-heading">contact us</h1>
+                <h1 className="contact-heading">contact us</h1>
                 <div>
                     <label className="contact-label" htmlFor="username">username</label>
                     <input

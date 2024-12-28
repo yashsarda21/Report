@@ -33,6 +33,7 @@ h1 {
   font-size: 5.4rem;
   line-height: 1.1;
   font-weight: bold;
+  color: var(--btn-color);
 }
 
 p,
@@ -63,6 +64,7 @@ li {
 .container {
   max-width: 140rem;
   padding: 4rem 2.4rem;
+  margin: 20px 20px;
   margin: 0 auto;
 }
 
@@ -123,14 +125,14 @@ button {
     }
   }
 
-  .hero-image {
+  /* .hero-image {
     display: flex;
     justify-content: center;
     & img {
       width: 70%;
       height: auto;
     }
-  }
+  } */
 }
 
 /***** End Hero  *****/
@@ -166,10 +168,8 @@ button {
 }
 
 .section-contact {
-  /* General styles for the contact section */
-.section-contact {
   padding: 4rem 2rem;
-  background-color: #f4f3ff;
+  /* background-color: #f4f3ff; */
 }
 
 .contact-content h1 {
@@ -226,13 +226,13 @@ form div {
 
 label {
   font-size: 1.8rem;
-  color: var(--dark-color);
+  color: var(---bg-color);
 }
 
 input,
 textarea {
   padding: 1.2rem;
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
@@ -276,11 +276,6 @@ button:active {
 
   .section-form {
       padding: 2rem;
-  }
-
-  h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
   }
 
   form div {
@@ -348,10 +343,6 @@ button:active {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 } */
 
-.main-heading {
-  color: #333;
-}
-
 /* Responsive Styles */
 @media (max-width: 768px) {
   .grid {
@@ -396,26 +387,8 @@ button:hover {
   /* border: 0.2rem solid #fff; */
 }
 
-a:hover,
-a.active {
-  color: #535bf2;
-}
 
-/* pseduo elements  */
-.main-heading {
-  position: relative;
-  text-transform: capitalize;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 50%;
-    height: 0.5rem;
-    background-color: var(--btn-color);
-  }
-}
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -711,7 +684,3 @@ table tr, thead th{
 }
 
 
-.contact-label{
-  background-color: #fff;
-  color: red;
-}

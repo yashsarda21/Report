@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.container {
+    width: 90% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.section-registration {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 50px 0 !important;
+}
+
+.grid {
+    display: grid !important;
+    gap: 20px !important;
+}
+
+.grid-two-cols {
+    grid-template-columns: 1fr 1fr !important;
+    align-items: center !important;
+}
+
+/* Registration Form Styles */
+.registration-img img {
+    width: 100% !important;
+    height: auto !important;
+    border-radius: 10px !important;
+}
+
+.registration-form {
+    /* background-color: #f9f9f9 !important; */
+    padding: 30px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.contact-heading {
+    font-size: 5.8rem !important;
+    color: var(--bg-color); 
+    text-align: center !important;
+    margin-bottom: 20px !important;
+}
+
+.form-group {
+    margin-bottom: 20px !important;
+}
+
+
+input {
+    width: 100% !important;
+    padding: 10px !important;
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+    font-size: 2rem !important;
+}
+
+label {
+    font-size: 2rem !important;
+    color: var(--bg-color) !important;
+    display: block !important;
+    margin-bottom: 5px !important;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .grid-two-cols {
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+    }
+
+    .registration-form {
+        margin-top: 20px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-heading {
+        color: var(--bg-color);
+        font-size: 4.5rem !important;
+    }
+
+    input, .btn-submit {
+        font-size: 1.5rem !important;
+    }
+}

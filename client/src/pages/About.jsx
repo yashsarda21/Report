@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Analytics } from "../components/Analytics";
+// import { Analytics } from "../components/Analytics";
 import { useAuth } from "../store/auth";
 
 const About = () => {
@@ -57,7 +57,7 @@ const About = () => {
                 </section>
             </main>
     
-            <Analytics/>
+            {/* <Analytics/> */}
         </>
     );
 };

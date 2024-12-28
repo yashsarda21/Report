@@ -1,0 +1,39 @@
+.home-heading{
+    padding-top: 20px;
+}
+.hero-image {
+    display: block;
+    text-align: center;
+    & img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+.section-hero {
+    margin: 20px 20px;
+}
+/* 
+.home-container {
+    max-width: 1100px;
+    margin: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+} */
+
+.bottom-image {
+    display: none;
+}
+
+/* Media query for screen sizes less than 600px */
+@media (max-width: 750px) {
+    .top-image {
+        display: none; /* Hide the top image */
+    }
+
+    .bottom-image {
+        display: block; /* Show the bottom image */
+    }
+}
