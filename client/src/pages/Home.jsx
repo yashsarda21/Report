@@ -10,19 +10,17 @@ export const Home = () => {
         <section className="section-hero">
             <div className="container grid grid-two-cols">
                 <div className="hero-content">
-                    <p className="home-heading">We are the World Best IT Company</p>
-                    <h1>Welcome to Y&S and R&R</h1>
-                    <p>
-                    Are you ready to see your business like never before? Our platform delivers detailed reports and actionable insights that unlock your company's full potential. With in-depth analysis and tailored dashboards, we provide the clarity you need to make smarter, data-driven decisions.
-                    </p>
-                    <div className="btn btn-group">
+                    <p className="home-heading">Empowering Your Business Through Visualization</p>
+                    <h1>Welcome to BrightAxis Analytics</h1>
+                    <p>At BrightAxis Analytics, we believe that understanding your business starts with seeing it clearly. We provide cutting-edge business analytics services powered by data visualization, transforming complex data into actionable insights.                    </p>
+                    {/* <div className="btn btn-group">
                         <a href="/contact">
                             <button className="btn">connect now</button>
                         </a>
                         <a href="/services">
                             <button className="btn secondary-btn">learn more</button>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
 
             {/* hero images  */}
@@ -58,16 +56,15 @@ export const Home = () => {
             <p>We are here to help you</p>
             <h1>Get Started Today</h1>
             <p>
-            Take the leap into smarter business strategies! Our tools for performance benchmarking and trend forecasting ensure you stay ahead of the competition. Simplify complex data and turn it into valuable insights to elevate your decision-making and fuel your success.
-            </p>
-            <div className="btn btn-group ">
-                <a href="/contact">
-                <button className="btn">connect now</button>
-                </a>
-                <a href="/services">
-                <button className="btn secondary-btn">learn more</button>
-                </a>
-            </div>
+            Our goal is to help businesses of all sizes gain a deeper understanding of their performance and make data-driven decisions with confidence. By turning raw data into intuitive visual dashboards, we empower leaders and teams to uncover trends, identify opportunities, and track key metrics in real time.Whether you are looking to streamline operations, optimize financial performance, or simply gain a clearer view of your business, we provide the tools and insights you need to make smarter decisions, faster.            </p>
+                {/* <div className="btn btn-group ">
+                    <a href="/contact">
+                    <button className="btn">connect now</button>
+                    </a>
+                    <a href="/services">
+                    <button className="btn secondary-btn">learn more</button>
+                    </a>
+                </div> */}
             </div>
             <div className="hero-image bottom-image">
             <img

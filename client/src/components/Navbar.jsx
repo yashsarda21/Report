@@ -73,7 +73,7 @@ const Navbar = () => {
             <div className="container">
                 <div className="logo">
                     <NavLink className="website-name" to="/" onClick={handleCloseNavbar}>
-                        S&Y and R&R
+                    BrightAxis Analytics
                     </NavLink>
                 </div>
                 <div className="menu-icon" onClick={handleShowNavbar}>
@@ -83,18 +83,29 @@ const Navbar = () => {
                     <ul>
                         <li>
                             <NavLink to="/" onClick={handleCloseNavbar}>
-                                Home
+                                About us
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/about" onClick={handleCloseNavbar}>
-                                About
+                                Our Team
                             </NavLink>
                         </li>
                         <li>
                             <NavLink to="/contact" onClick={handleCloseNavbar}>
                                 Contact
                             </NavLink>
+                        </li>
+                        <li>
+                                    <a
+                                        href="/report"
+                                        onClick={(e) => {
+                                            handleReportClick(e);
+                                            handleCloseNavbar();
+                                        }}
+                                    >
+                                        Report
+                                    </a>
                         </li>
                         {isEmailYash && (
                             <li>
@@ -105,17 +116,6 @@ const Navbar = () => {
                         )}
                         {isLoggedIn ? (
                             <>
-                                <li>
-                                    <a
-                                        href="/report"
-                                        onClick={(e) => {
-                                            handleReportClick(e);
-                                            handleCloseNavbar();
-                                        }}
-                                    >
-                                        Report
-                                    </a>
-                                </li>
                                 <li>
                                     <NavLink to="/logout" onClick={handleCloseNavbar}>
                                         Logout

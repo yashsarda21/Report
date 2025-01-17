@@ -64,7 +64,7 @@ input {
 
 label {
     font-size: 2rem !important;
-    color: var(--bg-color) !important;
+    color: var(--btn-color) !important;
     display: block !important;
     margin-bottom: 5px !important;
 }
