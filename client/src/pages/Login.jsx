@@ -48,7 +48,8 @@ const Login = () => {
                     })
                     storeTokenInLocalStorage(res_data.token);
                     // localStorage.setItem("token" , res_data.token);
-                    navigate("/")
+                    navigate("/report")
+                    window.location.reload();
                 }
                 else{
                     alert("invalid credentials");

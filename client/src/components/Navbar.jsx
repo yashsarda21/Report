@@ -116,14 +116,14 @@ const Navbar = () => {
                         )}
                         {isLoggedIn ? (
                             <>
-                                <li>
+                                <li className="lastBtn">
                                     <NavLink to="/logout" onClick={handleCloseNavbar}>
                                         Logout
                                     </NavLink>
                                 </li>
                             </>
                         ) : (
-                            <li>
+                            <li className="lastBtn">
                                 <NavLink to="/login" onClick={handleCloseNavbar}>
                                     Login
                                 </NavLink>
