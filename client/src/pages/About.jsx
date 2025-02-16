@@ -33,7 +33,7 @@ const About = () => {
                     </div>
                     <div className="hero-image">
                     <img
-                        src="/images/about.png"
+                        src="/images/sarvesh.jpeg"
                         alt="coding buddies "
                         width="400"
                         height="500"

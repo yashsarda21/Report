@@ -1,0 +1,73 @@
+/* Container styling */
+.contact-container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: auto;
+}
+
+/* Contact details section */
+.contact-details1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-details1 h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-details1 p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.contact-details1 a {
+    color: #75719A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-details1 a:hover {
+    text-decoration: underline;
+}
+
+/* Google Map container */
+.map-container1 {
+    width: 100%;
+    max-width: 600px;
+}
+
+.google-map1 {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .contact-container1 {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .contact-details1 {
+        text-align: left;
+        max-width: 50%;
+    }
+
+    .map-container1 {
+        max-width: 50%;
+    }
+}
